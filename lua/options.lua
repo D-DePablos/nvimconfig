@@ -21,6 +21,7 @@ vim.opt.completeopt = "menuone,noselect" -- nvim-cmp
 -- vim.opt.completeopt = {"menuone", "longest", "preview"}
 vim.opt.signcolumn = "yes" -- always show the signcolumn
 vim.opt.termguicolors = true
+vim.opt.guicursor = ""
 
 -- spelling
 vim.opt.spelllang = "en_gb"
@@ -29,7 +30,7 @@ vim.opt.mousemodel = "popup"
 vim.opt.timeoutlen = 500
 
 -- Neovide settings
-vim.o.guifont = "Victor Mono Nerd Font:h11"
+vim.o.guifont = "Fira Code Nerd Font Mono:h11"
 -- vim.opt.guifontsize = 11
 vim.g.neovide_transparency = 0.9
 vim.g.neovide_fullscreen = true
@@ -47,15 +48,16 @@ vim.cmd([[autocmd InsertEnter * norm zz]])
 
 -- Give me some fenced codeblock goodness
 vim.g.markdown_fenced_languages = {
-	"html",
-	"javascript",
-	"javascriptreact",
-	"typescript",
-	"json",
-	"css",
-	"scss",
-	"lua",
-	"vim",
-	"bash",
-	"ts=typescript",
+  "html",
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "json",
+  "css",
+  "scss",
+  "lua",
+  "vim",
+  "bash",
+  "python",
+  "ts=typescript",
 }
