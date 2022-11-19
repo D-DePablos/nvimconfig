@@ -30,7 +30,7 @@ vim.opt.mousemodel = "popup"
 vim.opt.timeoutlen = 500
 
 -- Neovide settings
-vim.o.guifont = "Fira Code Nerd Font Mono:h11"
+vim.o.guifont = "Fira Code Nerd Font Mono:h16"
 -- vim.opt.guifontsize = 11
 vim.g.neovide_transparency = 0.9
 vim.g.neovide_fullscreen = true

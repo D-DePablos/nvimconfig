@@ -4,7 +4,7 @@ return require("packer").startup({
     use("wbthomason/packer.nvim")
 
     -- Tmux navigator
-    -- use("christoomey/vim-tmux-navigator")
+    use("christoomey/vim-tmux-navigator")
 
     -- lsp
     use("neovim/nvim-lspconfig")
@@ -105,6 +105,12 @@ return require("packer").startup({
       end,
     })
 
+    use({
+      "stevearc/aerial.nvim",
+      config = function()
+        require("aerial").setup()
+      end,
+    })
     -- WhichKey
     use("folke/which-key.nvim")
 
