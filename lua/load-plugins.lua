@@ -51,6 +51,8 @@ return require("packer").startup({
     -- tpope
     use("tpope/vim-fugitive")
     use("tpope/vim-surround")
+    use("machakann/vim-sandwich")
+    use("andrewradev/switch.vim")
 
     -- commenting
     use("JoosepAlviste/nvim-ts-context-commentstring")
