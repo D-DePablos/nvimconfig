@@ -93,6 +93,8 @@ return require("packer").startup({
 
     -- icons in completion
     use("onsails/lspkind-nvim")
+    use("williamboman/mason.nvim")
+    use("williamboman/mason-lspconfig.nvim")
 
     -- Folke plugins
     -- Theme
@@ -167,5 +169,6 @@ return require("packer").startup({
 
     -- Dashboard
     use("goolord/alpha-nvim")
+
   end,
 })
