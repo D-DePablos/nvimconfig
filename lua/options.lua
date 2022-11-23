@@ -22,6 +22,8 @@ vim.opt.completeopt = "menuone,noselect" -- nvim-cmp
 vim.opt.signcolumn = "yes" -- always show the signcolumn
 vim.opt.termguicolors = true
 vim.opt.guicursor = ""
+vim.opt.swapfile = false
+vim.opt.backup = false
 
 -- spelling
 vim.opt.spelllang = "en_gb"
