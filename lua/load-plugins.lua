@@ -6,9 +6,6 @@ return require("packer").startup({
     -- Tmux navigator
     use("christoomey/vim-tmux-navigator")
 
-    -- lsp
-    use("neovim/nvim-lspconfig")
-
     -- Telescope
     use({
       "nvim-telescope/telescope.nvim",
@@ -83,20 +80,24 @@ return require("packer").startup({
     })
 
     -- Undotree
-    use("mbbill/undotree")
+    use("mbbill/undotree") -- Use with Space U
 
     -- file tree
-    use("kyazdani42/nvim-tree.lua")
+    use("kyazdani42/nvim-tree.lua") -- Use with Space E
 
     -- icons
     use("kyazdani42/nvim-web-devicons")
 
     -- icons in completion
     use("onsails/lspkind-nvim")
-    use("williamboman/mason.nvim")
-    use("williamboman/mason-lspconfig.nvim")
-
-    -- Folke plugins
+    --
+    -- lsp
+    use({
+      "neovim/nvim-lspconfig",
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+    })
+    --
     -- Theme
     use("folke/tokyonight.nvim")
 
@@ -169,6 +170,5 @@ return require("packer").startup({
 
     -- Dashboard
     use("goolord/alpha-nvim")
-
   end,
 })
